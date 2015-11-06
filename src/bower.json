@@ -1,0 +1,27 @@
+{
+  "name": "orr2015-ffos",
+  "version": "1.0.0",
+  "authors": [
+    "Daniel Maslowski <info@orangecms.org>"
+  ],
+  "description": "slides for FFOS workshop at ORR2015",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "ffos",
+    "firefoxos"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "remark": "~0.12.0"
+  }
+}

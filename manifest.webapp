@@ -1,0 +1,38 @@
+{
+  "version": "0.0.1",
+  "name": "Firefox OS",
+  "description": "presentation for FFOS workshop at ORR2015",
+  "launch_path": "/src/index.html",
+  "icons": {
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "60": "/img/icons/icon60x60.png",
+    "128": "/img/icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "Daniel Maslowski",
+    "url": "http://orangecms.org"
+  },
+  "type": "privileged",
+  "permissions": {
+    "systemXHR": {
+      "description": "Required to load remote content"
+    }
+  },
+  "csp" : "default-src *; script-src 'self' 'unsafe-inline'; object-src 'self'; font-src https://fonts.googleapis.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'",
+  "installs_allowed_from": [
+    "*"
+  ],
+  "locales": {
+    "es": {
+      "name": "Aplicación privilegiada",
+      "description": "Demuestra cómo utilizar permisos para cargar contenido remoto",
+      "permissions": {
+        "systemXHR": {
+          "description": "Requerido para cargar contenido remoto"
+        }
+      }
+    }
+  },
+  "default_locale": "en"
+}
