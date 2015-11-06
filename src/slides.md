@@ -32,3 +32,13 @@ class: center, middle
 ![Firefox Developer Edition](img/firefox-dev-logo.png)
 
 ---
+
+1. Firefox Developer Edition installieren
+2. Firefox öffnen und WebIDE starten (F8)
+
+![WebIDE](img/webide.png)
+
+3. Menü: Project &rarr; Manage Extra Components
+  - Firefox OS 3.0 Simulator installieren
+  - ggf. ADB Helper Add-on installieren
+4. Runtime auswählen (Runtime &rarr; Firefox OS 3.0)

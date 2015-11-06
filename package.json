@@ -13,7 +13,10 @@
   "author": "Daniel Maslowski",
   "license": "MIT",
   "dependencies": {
+  },
+  "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-connect": "^2.2.0"
+    "gulp-connect": "^2.2.0",
+    "gulp-watch": "^4.3.5"
   }
 }
