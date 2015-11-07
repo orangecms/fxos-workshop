@@ -1,6 +1,10 @@
 class: center, middle
+
 # Firefox OS Apps erstellen in wenigen Minuten
+
 ![Firefox OS](img/FirefoxOS_Phone_Visual_Blue.png)
+
+## Daniel Maslowski | ![Twitter](img/twitter.png) @orangecms | ![GitHub](img/github.png) orangecms
 
 ---
 
