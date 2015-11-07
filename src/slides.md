@@ -4,7 +4,7 @@ class: center, middle
 
 ![Firefox OS](img/FirefoxOS_Phone_Visual_Blue.png)
 
-## Daniel Maslowski | ![Twitter](img/twitter.png) @orangecms | ![GitHub](img/github.png) orangecms
+Daniel Maslowski | ![Twitter](img/twitter.png) @orangecms | ![GitHub](img/github.png) orangecms
 
 ---
 
@@ -23,11 +23,21 @@ class: center, middle
 
 ---
 
+## Die Oberfläche
+
+![FFOS Simulator](img/ffos-simulator-1.png)
+![FFOS Simulator](img/ffos-simulator-2.png)
+![FFOS Simulator](img/ffos-simulator-3.png)
+
+---
+
 ## Der Marketplace
 
 Von hier können sich Benutzer Apps herunterladen, ähnlich wie aus dem Google Play Store unter Android.
 
 ![Marketplace](img/icon-marketplace.png)
+
+Entwickler und Unternehmen können hier ihre Apps veröffentlichen.
 
 ---
 
@@ -56,14 +66,9 @@ class: center, middle
 
 ---
 
-class: center, middle
-![FFOS Simulator](img/webide-ffos-simulator-1.png)
-
----
-
 ## Reale Geräte
 
-### Auf dem Gerät die [Developer Settings](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Debugging/Developer_settings) und Debug-Modi aktivieren
+### Auf dem Gerät [Debug-Modi aktivieren](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Debugging/Developer_settings)
 
 --
 
@@ -105,8 +110,8 @@ class: center, middle
 
 class: center, middle
 
+![FFOS Installation](img/webide-ffos-simulator-1.png)
 ![FFOS Installation](img/webide-ffos-simulator-2.png)
-![FFOS Installation](img/webide-ffos-simulator-3.png)
 
 ---
 
