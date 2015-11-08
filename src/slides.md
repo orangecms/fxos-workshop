@@ -200,18 +200,33 @@ class: center, middle
 
 ## notwendige Modifikationen
 
-- [MDN](https://developer.mozilla.org/en-US/Apps/Quickstart/Build/Your_first_app) konsultieren :)
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/Apps/Quickstart/Build/Your_first_app) konsultieren :)
+
+--
+
 - [`webapp.manifest`](https://developer.mozilla.org/en-US/Apps/Build/Manifest) anlegen
+
+--
+
 - Einstiegspunkt (z.B. `index.html`) in `webapp.manifest` eintragen
+
+--
+
 - Icons erstellen und in `webapp.manifest` eintragen
+
+--
+
 - [XHR-Objekte](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) anpassen
   1. in `webapp.manifest`:
     ```json
       "permissions": {
-          "systemXHR":{}
+          "systemXHR": {}
       }
     ```
   2. erzeugen mit `new window.XMLHttpRequest({ mozSystem: true })`
+
+--
+
 - CSP anpassen, wenn erwünscht
   - CSP kann nicht geschwächt werden, nur verschärft
 

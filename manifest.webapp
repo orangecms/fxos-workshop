@@ -13,6 +13,7 @@
     "name": "Daniel Maslowski",
     "url": "http://orangecms.org"
   },
+  "fullscreen": "true",
   "type": "privileged",
   "permissions": {
     "systemXHR": {
