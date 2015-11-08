@@ -15,6 +15,7 @@ Daniel Maslowski | ![Twitter](img/twitter.png) @orangecms | ![GitHub](img/github
 3. Eine fertige App installieren
 4. Eine statische Mini-App erstellen
 5. Eine bestehende App portieren
+6. Debugging mit Developer Tools
 
 ---
 
@@ -37,7 +38,13 @@ Von hier können sich Benutzer Apps herunterladen, ähnlich wie aus dem Google P
 
 ![Marketplace](img/icon-marketplace.png)
 
-Entwickler und Unternehmen können hier ihre Apps veröffentlichen.
+Entwickler und Unternehmen können hier ihre [Apps veröffentlichen](https://developer.mozilla.org/en-US/Marketplace).
+
+---
+
+class: center, middle
+![Firefox Marketplace](img/marketplace-1.png)
+![Firefox Marketplace](img/marketplace-2.png)
 
 ---
 
@@ -102,7 +109,7 @@ class: center, middle
 
 ## Projekt installieren und starten
 
-- Play-Button drücken :)
+- Play-Button ▶ drücken
 
 ![WebIDE Installation](img/webide-open-app-2.png)
 
@@ -190,3 +197,41 @@ class: center, middle
 # Eine bestehende App portieren
 
 ---
+
+## notwendige Modifikationen
+
+- [MDN](https://developer.mozilla.org/en-US/Apps/Quickstart/Build/Your_first_app) konsultieren :)
+- [`webapp.manifest`](https://developer.mozilla.org/en-US/Apps/Build/Manifest) anlegen
+- Einstiegspunkt (z.B. `index.html`) in `webapp.manifest` eintragen
+- Icons erstellen und in `webapp.manifest` eintragen
+- [XHR-Objekte](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) anpassen
+  1. in `webapp.manifest`:
+    ```json
+      "permissions": {
+          "systemXHR":{}
+      }
+    ```
+  2. erzeugen mit `new window.XMLHttpRequest({ mozSystem: true })`
+- CSP anpassen, wenn erwünscht
+  - CSP kann nicht geschwächt werden, nur verschärft
+
+---
+
+class: center, middle
+# Debugging mit Developer Tools
+
+---
+
+## Inspector in WebIDE
+
+![Developer Tools in WebIDE](img/webide-devtools.png)
+
+---
+
+class: center, middle
+![Developer Tools in FFOS](img/ffos-devtools.png)
+
+---
+
+class: center, middle
+# Dankeschön, das  war's 😸
