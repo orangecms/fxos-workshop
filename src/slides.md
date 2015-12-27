@@ -57,7 +57,7 @@ class: center, middle
 
 ## Firefox Developer Edition
 
-1. WebIDE starten (F8)
+1. WebIDE starten (Shift + F8)
 2. Menü: Project &rarr; Manage Extra Components
 
 ![WebIDE](img/webide-1.png)
