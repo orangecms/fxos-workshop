@@ -1,6 +1,6 @@
 class: center, middle
 
-# Firefox OS Apps erstellen in wenigen Minuten
+# Creating Firefox OS Apps in a Couple of Minutes
 
 ![Firefox OS](img/FirefoxOS_Phone_Visual_Blue.png)
 
@@ -10,35 +10,35 @@ Daniel Maslowski | ![Twitter](img/twitter.png) @orangecms | ![GitHub](img/github
 
 # Agenda
 
-1. Schnell-Einführung in Firefox OS
-2. Einrichtung für die Entwicklung
-3. Eine fertige App installieren
-4. Eine statische Mini-App erstellen
-5. Eine bestehende App portieren
-6. Debugging mit Developer Tools
+1. Quick introduction to Firefox OS
+2. Setting up for development
+3. Installing an existing app
+4. Creating a static app
+5. Porting existing web apps
+6. Debugging with the Developer Tools
 
 ---
 
 class: center, middle
-# Schnell-Einführung in Firefox OS
+# Quick introduction to Firefox OS
 
 ---
 
-## Die Oberfläche
+## The UI
 
-![FFOS Simulator](img/ffos-simulator-1.png)
-![FFOS Simulator](img/ffos-simulator-2.png)
-![FFOS Simulator](img/ffos-simulator-3.png)
+![FxOS Simulator](img/ffos-simulator-1.png)
+![FxOS Simulator](img/ffos-simulator-2.png)
+![FxOS Simulator](img/ffos-simulator-3.png)
 
 ---
 
-## Der Marketplace
+## The Marketplace
 
-Von hier können sich Benutzer Apps herunterladen, ähnlich wie aus dem Google Play Store unter Android.
+From here, users can download apps, similar to the Google Play Store on Android.
 
 ![Marketplace](img/icon-marketplace.png)
 
-Entwickler und Unternehmen können hier ihre [Apps veröffentlichen](https://developer.mozilla.org/en-US/Marketplace).
+Developers can [publish their apps](https://developer.mozilla.org/en-US/Marketplace) on this platform.
 
 ---
 
@@ -49,7 +49,7 @@ class: center, middle
 ---
 
 class: center, middle
-# Einrichtung für die Entwicklung
+# Setting up for development
 
 ![Firefox Developer Edition](img/firefox-dev-logo.png)
 
@@ -57,8 +57,8 @@ class: center, middle
 
 ## Firefox Developer Edition
 
-1. WebIDE starten (Shift + F8)
-2. Menü: Project &rarr; Manage Extra Components
+1. Open the WebIDE (Shift + F8)
+2. Menu: Project &rarr; Manage Extra Components
 
 ![WebIDE](img/webide-1.png)
 
@@ -66,40 +66,40 @@ class: center, middle
 
 ## Simulator
 
-1. Firefox OS 3.0 Simulator installieren
-2. Simulator starten (Simulators &rarr; Firefox OS 3.0)
+1. Install the Firefox OS 3.0 Simulator
+2. Start the simulator (Simulators &rarr; Firefox OS 3.0)
 
 ![WebIDE](img/webide-2.png)
 
 ---
 
-## Reale Geräte
+## Real devices
 
-### Auf dem Gerät [Debug-Modi aktivieren](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Debugging/Developer_settings)
+### On the device, [activate Debug Mode](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Debugging/Developer_settings)
 
 --
 
 ### WebIDE
 - via USB:
-  1. ADB Helper Add-on installieren
-  2. Runtime auswählen (Runtime &rarr; Firefox OS 3.0)
+  1. Install the ADB Helper Add-on
+  2. Choose the runtime (Runtime &rarr; Firefox OS 3.0)
 
 - via Wi-Fi:
-  1. Valence installieren (im Bundle mit Developer Edition)
-  2. Runtime auswählen (Wi-Fi &rarr; Geräte-ID)
+  1. Install Valence (bundled with Developer Edition)
+  2. Choose the runtime (Wi-Fi &rarr; Device ID)
 
 --
 
-### Auf dem Gerät den Zugriff zulassen
+### Allow access on the device
 
 ---
 
 class: center, middle
-# Eine fertige App installieren
+# Installing an existing app
 
 ---
 
-## Projekt in WebIDE öffnen
+## Open the project in WebIDE
 
 - Open Packaged App...
 
@@ -107,9 +107,9 @@ class: center, middle
 
 ---
 
-## Projekt installieren und starten
+## Install and run the project
 
-- Play-Button ▶ drücken
+- Push the play button ▶
 
 ![WebIDE Installation](img/webide-open-app-2.png)
 
@@ -123,15 +123,15 @@ class: center, middle
 ---
 
 class: center, middle
-# Eine statische Mini-App erstellen
+# Creating a static app
 
 ---
 
-## Mindestbestandteile einer App
+## Minimum set of files comprising an app
 
-1. `webapp.manifest` (Meta-Informationen der App)
-2. HTML-Datei (die eigentliche App)
-3. Icons (für den Launcher / Homescreen)
+1. `webapp.manifest` (meta information of the app)
+2. HTML file (the actual app)
+3. Icons (for the launcher / home screen)
 
 ---
 
@@ -141,7 +141,7 @@ class: center, middle
 {
   "version": "0.0.1",
   "name": "Firefox OS",
-  "description": "presentation for FFOS workshop at ORR2015",
+  "description": "FxOS workshop at 32C3",
   "launch_path": "/src/index.html",
   "icons": {
     "16": "/img/icons/icon16x16.png",
@@ -163,7 +163,7 @@ class: center, middle
 
 ---
 
-## HTML-Datei und Icons
+## HTML File and icons
 
 - `/src/index.html`
 ```html
@@ -174,14 +174,14 @@ class: center, middle
       <TITLE>HTML Demo</TITLE>
    </HEAD>
    <BODY>
-      <P>Hallo OpenRheinRuhr!</P>
+      <P>Hallo 32C3!</P>
    </BODY>
 </HTML>
 ```
 
 --
 
-- Icons in verschiedenen Größen
+- Icons in multiple sizes
 ```bash
 $ ls -l img/icons/
 total 40
@@ -194,46 +194,46 @@ total 40
 ---
 
 class: center, middle
-# Eine bestehende App portieren
+# Porting existing web apps
 
 ---
 
-## notwendige Modifikationen
+## necessary modifications
 
-- [Mozilla Developer Network](https://developer.mozilla.org/en-US/Apps/Quickstart/Build/Your_first_app) konsultieren :)
-
---
-
-- [`webapp.manifest`](https://developer.mozilla.org/en-US/Apps/Build/Manifest) anlegen
+- Check out the [Mozilla Developer Network](https://developer.mozilla.org/en-US/Apps/Quickstart/Build/Your_first_app) :)
 
 --
 
-- Einstiegspunkt (z.B. `index.html`) in `webapp.manifest` eintragen
+- create [`webapp.manifest`](https://developer.mozilla.org/en-US/Apps/Build/Manifest)
 
 --
 
-- Icons erstellen und in `webapp.manifest` eintragen
+- provide your entry point (e.g. `index.html`) as the `"launch_path"` in `webapp.manifest`
 
 --
 
-- [XHR-Objekte](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) anpassen
+- create icons and add them to `webapp.manifest`
+
+--
+
+- adjust [XHR objects](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
   1. in `webapp.manifest`:
     ```json
       "permissions": {
           "systemXHR": {}
       }
     ```
-  2. erzeugen mit `new window.XMLHttpRequest({ mozSystem: true })`
+  2. create with `new window.XMLHttpRequest({ mozSystem: true })`
 
 --
 
-- CSP anpassen, wenn erwünscht
-  - CSP kann nicht geschwächt werden, nur verschärft
+- adjust CSP, if necessary
+  - CSP cannot be dropped or lowered, only hardened
 
 ---
 
 class: center, middle
-# Debugging mit Developer Tools
+# Debugging with the Developer Tools
 
 ---
 
@@ -249,4 +249,4 @@ class: center, middle
 ---
 
 class: center, middle
-# Dankeschön, das  war's 😸
+# Thanks, that's it! 😸

@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
   "name": "Firefox OS",
-  "description": "presentation for FFOS workshop at ORR2015",
+  "description": "FxOS workshop at 32C3",
   "launch_path": "/src/index.html",
   "icons": {
     "16": "/img/icons/icon16x16.png",
